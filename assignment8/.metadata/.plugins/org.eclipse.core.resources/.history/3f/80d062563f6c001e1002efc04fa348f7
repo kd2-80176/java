@@ -1,0 +1,21 @@
+package program02;
+
+import java.util.Scanner;
+
+public class Person implements Displayable {
+	private String fname;
+	private String lname;
+ 
+	Scanner sc=new Scanner(System.in);
+	public void accept() {
+		System.out.print("enter the first name of person=");
+         fname=sc.next();
+         System.out.print("enter the last name of emoloyee");
+	    lname=sc.next();
+	}
+	@Override 
+  public void display() {
+
+	}
+
+}

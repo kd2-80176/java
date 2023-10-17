@@ -1,0 +1,15 @@
+package payroll;
+
+class Box<T>
+{
+	
+}
+
+public class Box {
+
+	public static void main(String[] args) {
+
+
+	}
+
+}

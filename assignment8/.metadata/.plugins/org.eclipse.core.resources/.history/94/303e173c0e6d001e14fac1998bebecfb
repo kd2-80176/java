@@ -1,0 +1,35 @@
+package program02;
+
+class Box<T> {
+	private T data;
+
+	public T getData() {
+		return data;
+	}
+
+	public void setData(T data) {
+		this.data = data;
+	}
+
+	@Override
+	public String toString() {
+		return "Box [data=" + data + "]";
+	}
+
+}
+
+public class Main {
+	public static void printDisplayBox(Box<? extends Displayable>B) 
+	{
+		
+	}
+	public static void printBox(Box<?>b) {
+		System.out.println();
+		
+	}
+	public Main() {
+		
+
+	}
+
+}

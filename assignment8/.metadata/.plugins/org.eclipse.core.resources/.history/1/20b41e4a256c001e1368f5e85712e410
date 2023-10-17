@@ -1,0 +1,12 @@
+package payroll;
+import java.util.Scanner;
+public class Box {
+
+	public static void main(String[] args) {
+     Employee e1=new Manager();
+     Scanner sc=new Scanner(System.in);
+	e1.accept(sc);
+
+	}
+
+}

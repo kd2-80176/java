@@ -1,0 +1,12 @@
+package payroll;
+
+public class Box {
+
+	public static void main(String[] args) {
+	Person p1=new SalesManager();
+	p1.accept();
+    
+
+	}
+
+}
