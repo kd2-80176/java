@@ -1,0 +1,12 @@
+package program01;
+
+import java.util.Scanner;
+
+public class Que1 {
+ private String s;
+  Scanner sc =new Scanner(System.in);
+  
+  
+  
+  
+}

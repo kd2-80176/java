@@ -1,0 +1,11 @@
+package program02;
+
+public class Circle extends Object implements Cloneable{
+	
+  
+  
+   
+	
+	
+	
+}
