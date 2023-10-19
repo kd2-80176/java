@@ -1,0 +1,29 @@
+package que5;
+
+import java.util.Scanner;
+
+public class Tester {
+
+	public static int menu() {
+		int choice;
+		System.out.println("******************************");
+		System.out.println("0.EXIT");
+		System.out.println("1.insert into map");
+		System.out.println("2.find in map");
+		System.out.print("enter the choice=");
+		choice = new Scanner(System.in).nextInt();
+		System.out.println("*****************************");
+		return choice;
+
+	}
+
+	public static void main(String[] args) {
+		int choice;
+		while ((choice=menu())!=0) {
+			type type = (typ
+			
+		}
+
+	}
+
+}

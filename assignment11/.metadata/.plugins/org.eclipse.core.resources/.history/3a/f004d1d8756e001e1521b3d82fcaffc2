@@ -1,0 +1,16 @@
+package que5;
+
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class StudentMain {
+	
+public static 
+	public static void main(String[] args) {
+        Map<Integer, Student> map=new LinkedHashMap<Integer, Student>();
+        
+
+	}
+
+}

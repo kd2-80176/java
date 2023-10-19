@@ -1,0 +1,23 @@
+package que5;
+
+
+
+public class Tester {
+
+	public int menu() {
+		int choice;
+		System.out.println();
+		
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		
+    
+		
+		
+       
+	}
+
+}

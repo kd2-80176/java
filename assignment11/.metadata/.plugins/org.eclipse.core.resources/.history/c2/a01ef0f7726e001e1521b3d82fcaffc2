@@ -1,0 +1,28 @@
+package que5;
+
+import java.util.Scanner;
+
+public class Tester {
+
+	public int menu() {
+		int choice;
+		System.out.println("0.EXIT");
+		System.out.println("1.insert into map");
+		System.out.println("2.find in map");
+		System.out.println("enter the choice");
+		choice=new Scanner(System.in).nextInt();
+		
+		
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		
+    
+		
+		
+       
+	}
+
+}

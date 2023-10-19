@@ -1,0 +1,16 @@
+package que5;
+
+public class Student {
+	private int roll;
+	private String name;
+	private double marks;
+	public Student(int roll, String name, double marks) {
+	
+		this.roll = roll;
+		this.name = name;
+		this.marks = marks;
+	}
+	
+	
+	
+}

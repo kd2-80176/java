@@ -1,0 +1,22 @@
+package que1;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Tester {
+
+	public static void main(String[] args) {
+	Set<Library> book= new HashSet<>();
+		
+		book.add(new Library("101",125.0,"shekhar",10));
+		book.add(new Library("102",150.0,"yashraj",20));
+		book.add(new Library("106",200.0,"shekhar",60));
+		book.add(new Library("105",225.0,"shekhar",70));
+		book.add(new Library("104",110.0,"shekhar",20));
+		book.add(new Library("103",500.0,"shekhar",30));
+		book.add(new Library("107",450.0,"shekhar",50));
+		
+
+	}
+
+}

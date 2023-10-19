@@ -1,0 +1,42 @@
+package que4;
+
+import java.util.Comparator;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		Set<Library> book = new TreeSet<Library>();
+
+		book.add(new Library("101", 125.0, "shekhar", 10));
+		book.add(new Library("107", 150.0, "yashraj", 20));
+		book.add(new Library("10", 200.0, "tanay", 60));
+		book.add(new Library("37", 225.0, "pranav", 70));
+		book.add(new Library("104", 110.0, "dhnaraj", 20));
+		book.add(new Library("1050", 500.0, "krushna", 30));
+		book.add(new Library("107", 450.0, "sahil", 50));
+
+		Iterator<Library> itr = book.iterator();
+
+		class comparePrice implements Comparator<Library> {
+			public int compare(Library l1, Library l2) {
+				int diff = -Double.compare(l1.getPrice(), l2.getPrice());
+				return diff;
+
+			}
+		}
+		
+          comparePrice com=new 
+		while (itr.hasNext()) {
+			Library ele = itr.next();
+			System.out.println(ele);
+
+		}
+
+	}
+
+}

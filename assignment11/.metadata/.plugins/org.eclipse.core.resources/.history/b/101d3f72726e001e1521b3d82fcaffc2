@@ -1,0 +1,46 @@
+package que5;
+
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		
+     Map<String, Library> map=new HashMap<>();
+      
+     Library lib=new Library();
+     map.put(lib.getIsbn(), lib);
+		
+		
+		class priceComparator implements Comparator<Library> {
+			public int compare(Library l1, Library l2) {
+				int diff = -Double.compare(l1.getPrice(), l2.getPrice());
+				return diff;
+
+			}
+		}
+
+		priceComparator com = new priceComparator();
+
+		
+//   iterator in forward travarsal	
+		System.out.println("Iterate in forward order: ");
+    	Iterator<Library> itr = book.iterator();
+
+		while (itr.hasNext()) {
+			Library ele = itr.next();
+			System.out.println(ele);
+		}
+		
+		
+       
+	}
+
+}

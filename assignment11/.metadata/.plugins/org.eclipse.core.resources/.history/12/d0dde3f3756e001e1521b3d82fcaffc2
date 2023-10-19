@@ -1,0 +1,21 @@
+package que5;
+
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class StudentMain {
+	
+public static int menu() 
+{
+     int choice;
+     System.out.println("0.EXIT");
+     System.out.println("");
+}
+	public static void main(String[] args) {
+        Map<Integer, Student> map=new LinkedHashMap<Integer, Student>();
+        
+
+	}
+
+}

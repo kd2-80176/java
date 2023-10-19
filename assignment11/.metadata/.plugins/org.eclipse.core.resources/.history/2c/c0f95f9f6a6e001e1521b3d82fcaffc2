@@ -1,0 +1,35 @@
+package que4;
+
+import java.util.Comparator;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		
+
+		Iterator<Library> itr = book.iterator();
+
+		class priceComparator implements Comparator<Library> {
+			public int compare(Library l1, Library l2) {
+				int diff = -Double.compare(l1.getPrice(), l2.getPrice());
+				return diff;
+
+			}
+		}
+
+		priceComparator com = new priceComparator();
+
+		while (itr.hasNext()) {
+			Library ele = itr.next();
+			System.out.println(ele);
+
+		}
+
+	}
+
+}

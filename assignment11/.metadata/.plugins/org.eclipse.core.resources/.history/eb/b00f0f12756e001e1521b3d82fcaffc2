@@ -1,0 +1,6 @@
+package que5;
+
+public class Student {
+	private int roll;
+	private 
+}
