@@ -1,0 +1,9 @@
+package program;
+
+public class Labour {
+	private double hours;
+	private double rate;
+	
+	
+
+}

@@ -1,0 +1,8 @@
+package program06;
+
+public class CalSum {
+	public static void main(String[] args) {
+		
+	}
+
+}

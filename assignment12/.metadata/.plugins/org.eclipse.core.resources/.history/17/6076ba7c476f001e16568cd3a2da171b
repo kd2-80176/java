@@ -1,0 +1,19 @@
+package program;
+
+public class Manager implements Emp{
+	private double basicSalary;
+	private double dearanceAllowance;
+	@Override
+	public double getSal() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	@Override
+	public double calcIncentives() {
+		// TODO Auto-generated method stub
+		return Emp.super.calcIncentives();
+	}
+	
+	
+
+}

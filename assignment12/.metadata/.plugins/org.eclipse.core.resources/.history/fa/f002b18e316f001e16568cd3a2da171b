@@ -1,0 +1,8 @@
+package program03;
+
+public class Que3 {
+	public static void main(String[] args) {
+		Integer [] arr= {};
+	}
+
+}

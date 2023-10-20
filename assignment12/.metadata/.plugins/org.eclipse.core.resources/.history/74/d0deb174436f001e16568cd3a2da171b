@@ -1,0 +1,9 @@
+package program07;
+
+public class demoIntStream {
+
+	public static void main(String[] args) {
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package program;
+
+public class Clerk implements Emp {
+	private double salary;
+	
+	
+	
+	
+
+}

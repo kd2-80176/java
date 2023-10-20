@@ -1,0 +1,15 @@
+package program07;
+
+import java.util.stream.IntStream;
+
+public class demoIntStream {
+
+	public static void main(String[] args) {
+		IntStream istr=IntStream.iterate(1, x->x+1);
+		int sum=istr.sum();
+		System.out.println("Sum :"+sum);
+		System.out.println("out");
+
+	}
+
+}

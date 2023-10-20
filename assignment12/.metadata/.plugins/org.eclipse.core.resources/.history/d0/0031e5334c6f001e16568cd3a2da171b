@@ -1,0 +1,18 @@
+package program;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		Emp []arr=new Emp() {
+			
+			@Override
+			public double getSal() {
+				// TODO Auto-generated method stub
+				return 0;
+			}
+		};
+		arr[0]=new Manager();
+
+	}
+
+}

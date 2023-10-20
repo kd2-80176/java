@@ -1,0 +1,5 @@
+package program07;
+
+public interface Emp {
+
+}

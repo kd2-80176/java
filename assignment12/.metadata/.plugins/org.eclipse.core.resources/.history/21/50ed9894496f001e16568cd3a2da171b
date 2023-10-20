@@ -1,0 +1,10 @@
+package program;
+
+public interface Emp {
+	public double getSal();
+	default double calcIncentives() {
+		return 0.0;
+				}
+	
+
+}

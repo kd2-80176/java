@@ -1,0 +1,16 @@
+package program07;
+
+import java.util.stream.IntStream;
+
+public class demoIntStream {
+
+	public static void main(String[] args) {
+		
+		IntStream istr=IntStream.range(1, 11);
+		int total=istr.sum();
+		System.out.println("Sum :"+sum);  
+		
+
+	}
+
+}

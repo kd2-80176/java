@@ -1,0 +1,13 @@
+package program;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		Emp []arr=new Emp[6]; 
+		arr[0]=new Manager();
+		arr[1]=new Labour();
+		
+
+	}
+
+}

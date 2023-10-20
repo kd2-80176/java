@@ -1,0 +1,16 @@
+package program;
+
+public interface Emp {
+	public  double getSal();
+	default double calcIncentives() {
+		return 0.0;
+				}
+	static double calcTotalIncome(Emp arr[]) 
+	{
+		for (Emp emp : arr) {
+			
+		}
+	};
+	
+
+}

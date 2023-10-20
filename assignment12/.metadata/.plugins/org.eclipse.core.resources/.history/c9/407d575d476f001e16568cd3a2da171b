@@ -1,0 +1,8 @@
+package program;
+
+public class Manager implements {
+	private double basicSalary;
+	private double dearanceAllowance;
+	
+
+}

@@ -1,0 +1,15 @@
+package program05;
+
+import java.util.Scanner;
+import java.util.stream.Stream;
+
+public class Que5 {
+
+	public static void main(String[] args) {
+	System.out.println("Enter the number to calculate the factcorial");
+	int num=new Scanner(System.in).nextInt();
+	
+	Stream<Integer> stream=Stream.
+	}
+
+}

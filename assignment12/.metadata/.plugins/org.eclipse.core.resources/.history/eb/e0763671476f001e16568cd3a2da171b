@@ -1,0 +1,9 @@
+package program;
+
+public class Manager implements Emp{
+	private double basicSalary;
+	private double dearanceAllowance;
+	
+	
+
+}

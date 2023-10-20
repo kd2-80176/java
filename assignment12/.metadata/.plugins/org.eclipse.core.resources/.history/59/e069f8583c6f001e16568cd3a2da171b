@@ -1,0 +1,6 @@
+package program05;
+
+public interface factorial {
+	public void calFcat(int x);
+
+}

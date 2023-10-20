@@ -1,0 +1,41 @@
+package program02;
+
+import java.util.Scanner;
+
+public class Que2 implements Arithmatic {
+	public static int menu() {
+		int choice;
+		System.out.println("***************************************");
+		System.out.print("0.Exit");
+		System.out.print("1.Pefrom addition");
+		System.out.print("2.Perform substraction");
+		System.out.print("3.Perform multiplication");
+		System.out.print("4.Perform division");
+		System.out.print("enyer your choice");
+		choice = new Scanner(System.in).nextInt();
+		System.out.println("***************************************");
+		return choice;
+
+	}
+   static void  calculate(double num1,double num2,Arithmetic op) 
+   {
+	   double result=op.calc
+   }
+	public static void main(String[] args) {
+		
+		int choice;
+		while ((choice = menu()) != 0) {
+			switch (choice) {
+			case 1:
+
+				break;
+
+			default:
+				break;
+			}
+
+		}
+
+	}
+
+}

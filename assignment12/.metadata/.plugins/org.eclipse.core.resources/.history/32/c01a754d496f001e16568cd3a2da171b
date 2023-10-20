@@ -1,0 +1,8 @@
+package program;
+
+public class Clerk {
+	private double salary;
+	
+	
+
+}

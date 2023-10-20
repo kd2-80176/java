@@ -1,0 +1,21 @@
+package program;
+
+public class Labour implements Emp {
+	private double hours;
+	private double rate;
+	@Override
+	public double getSal() {
+		
+		return this.hours*this.rate;
+	}
+	@Override
+	public double calcIncentives() {
+		// TODO Auto-generated method stub
+		return Emp.super.calcIncentives();
+	}
+	
+	
+	
+	
+
+}

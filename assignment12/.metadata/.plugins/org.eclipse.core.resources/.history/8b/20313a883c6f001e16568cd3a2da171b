@@ -1,0 +1,15 @@
+package program05;
+
+import java.util.Scanner;
+
+public class Que5 {
+
+	public static void main(String[] args) {
+	System.out.println("Enter the number to calculate the factcorial");
+	long num=new Scanner(System.in).nextLong();
+	
+	long num=
+
+	}
+
+}
