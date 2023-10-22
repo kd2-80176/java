@@ -1,0 +1,115 @@
+package program02Dao;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.Scanner;
+
+import com.mysql.cj.x.protobuf.MysqlxCrud.Insert;
+
+public class UserMain {
+	public static int menu() {
+		int choice;
+		System.out.println("***********************************");
+		System.out.println("0.EXIT");
+		System.out.println("1.Insert user into table");
+		System.out.println("2.Select user from table");
+		System.out.println("3.Update user in table ");
+		System.out.println("4.Delete user from table");
+		System.out.print("Enter your choice=");
+		choice = new Scanner(System.in).nextInt();
+		System.out.println("***********************************");
+
+		return choice;
+
+	}
+
+	public static void main(String[] args) {
+		int choice;
+		Scanner sc = new Scanner(System.in);
+		User u = new User();
+		List<User> list=new ArrayList<User>();
+
+		while ((choice = menu()) != 0) {
+			switch (choice) {
+			case 1:
+				
+				try (UserDAO dao=new UserDAO()){
+				System.out.print("Enter the first name=");
+				String fname = sc.next();
+				u.setFirst_name(fname);
+				System.out.print("Enter the last name=");
+				String lname = sc.next();
+				u.setLast_name(lname);
+				System.out.print("Enter the emailid=");
+				String emailid = sc.next();
+				u.setEmail(emailid);
+				System.out.print("Enter the password =");
+				String password = sc.next();
+				u.setPassword(password);
+				System.out.print("Enter the date (dd-mm-yyyy)=");
+				String date = sc.next();
+				u.setDob(date);
+				
+				int cnt=dao.insert(u);
+				System.out.println("row inserted :"+cnt);
+				}catch (Exception e) {
+					e.printStackTrace();
+				}
+			
+				break;
+			case 2:
+				try(UserDAO dao=new UserDAO()){
+					list=dao.select();
+					list.forEach(m -> System.out.println(m));
+				}catch (Exception e) {
+				e.printStackTrace();
+				}
+				break;
+			case 3:
+				
+				try(UserDAO dao=new UserDAO()){
+					System.out.print("Enter the id to be updated= ");
+					int id=sc.nextInt();
+					u.setId(id);
+					System.out.print("Enter the first name to be updated=");
+					String fname=sc.next();
+					u.setFirst_name(fname);
+					System.out.print("Enter the last name to be updated=");
+					String lname=sc.next();
+					u.setLast_name(lname);
+					System.out.print("DEnter the password to be updated=");
+					String password=sc.next();
+					u.setPassword(password);
+					System.out.print("enter the new date to updated(dd-mm-yyyy)=");
+					String date=sc.next();
+					u.setDob(date);
+					int cnt=dao.;
+					System.out.println("row updated:"+cnt);
+					
+					
+					
+				}catch (Exception e) {
+					e.printStackTrace();
+				}
+				break;
+			case 4:
+				    try(UserDAO dao=new UserDAO()) {
+				    	System.out.println("Enter the you want to delete");
+				    	int id =sc.nextInt();
+				    	
+						
+					} catch (Exception e) {
+					 e.printStackTrace();
+					}
+				break;
+
+			default:
+				System.out.println("Invalid choice");
+				break;
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,6 @@
+package program02Dao;
+
+public class User {
+	private int id;
+	
+}

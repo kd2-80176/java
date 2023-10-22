@@ -1,0 +1,14 @@
+package program02Dao;
+
+import javax.xml.crypto.Data;
+
+public class User {
+	private int id;
+	private String first_name;
+	private String last_name;
+	private String email;
+	private String password;
+	private Data date;
+	
+	
+}

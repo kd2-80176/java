@@ -1,0 +1,8 @@
+package program02Dao;
+
+public class DbUtil {
+	private connection con;
+	
+	static
+
+}

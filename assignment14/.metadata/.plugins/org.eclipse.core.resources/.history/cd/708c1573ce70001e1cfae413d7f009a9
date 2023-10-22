@@ -1,0 +1,52 @@
+package program01;
+
+import java.util.Scanner;
+
+import com.mysql.cj.x.protobuf.MysqlxCrud.Update;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		Candidate c=new Candidate();
+		
+//		try(CandidateDAO dao= new CandidateDAO()) {
+//			System.out.print("enter the name=");
+//			String name=sc.next();
+//			c.setName(name);
+//			System.out.print("enter the party=");
+//			String party=sc.next();
+//			c.setParty(party);
+//			System.out.print("enter the votes=");
+//			int votes=sc.nextInt();
+//			c.setVotes(votes);
+//			int cnt=dao.save(c);
+//			System.out.println("row save :"+cnt);
+//
+//			
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+		try(CandidateDAO dao= new CandidateDAO())
+		{
+			System.out.print("enter the id to be modified=");
+			int id=sc.nextInt();
+			c.setId(id);
+			System.out.println("enter the name to be updated");
+			String name=sc.next();
+			c.setName(name);
+			System.out.println("enter the party to be updated");
+			String party=sc.next();
+			c.setParty(party);
+			int cnt=  ;
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	
+		 
+		
+
+	}
+
+}

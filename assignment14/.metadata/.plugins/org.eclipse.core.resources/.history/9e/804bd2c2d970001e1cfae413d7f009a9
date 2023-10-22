@@ -1,0 +1,17 @@
+package program02Dao;
+
+import javax.print.DocFlavor.STRING;
+import javax.xml.crypto.Data;
+
+public class User {
+	private int id;
+	private String first_name;
+	private String last_name;
+	private String email;
+	private String password;
+	private Data dob;
+	private boolean status;
+	private String 
+	
+	
+}
